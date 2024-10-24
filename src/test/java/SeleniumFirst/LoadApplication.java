@@ -13,7 +13,7 @@ public class LoadApplication {
 		driver.get("https://google.com");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String CurrentURL = driver.getCurrentUrl();
-		System.out.println(CurrentURL);
+		System.out.println("The current URL of the page is "+CurrentURL);
 		driver.navigate().refresh();
 		driver.close();
 	}

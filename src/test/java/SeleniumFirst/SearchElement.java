@@ -19,9 +19,9 @@ public class SearchElement {
 		driver.findElement(By.xpath("//input[@id='searchInput']")).sendKeys("Artificial Intelligence",Keys.ENTER);
 		driver.findElement(By.id("toc-History")).click();
 		String pageTitle = driver.getTitle();
-		System.out.println(pageTitle);
+		System.out.println("The title of the page is"+ pageTitle);
 		String currentpageURL = driver.getCurrentUrl();//For verification purpose - history page is currently displaying to the user
-		System.out.println(currentpageURL);//For verification purpose - history page is currently displaying to the user
+		System.out.println("The current URL of the page is"+ currentpageURL);//For verification purpose - history page is currently displaying to the user
 		driver.close();
 	}
 }
