@@ -14,7 +14,6 @@ public class LoadApplication2 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String CurrentURL = driver.getCurrentUrl();
 		System.out.println("The current URL of the page is "+CurrentURL);
-		System.out.println("The first proj");
 		driver.navigate().refresh();
 		driver.close();
 	}
